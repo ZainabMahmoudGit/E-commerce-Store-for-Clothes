@@ -1,0 +1,15 @@
+<div class="box">
+
+    <div class="row mt-5 mb-4">
+
+        @for (prodect of products; track prodect.id) {
+        <div class="col-md-3 col-sm-12 mt-5 mb-4">
+            <app-prodect [data2]="prodect" (item)="Addtocart(prodect)"></app-prodect>
+        </div>
+        }
+
+
+
+
+    </div>
+</div>

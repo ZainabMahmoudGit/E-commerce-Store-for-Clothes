@@ -1,0 +1,11 @@
+<div class="items">
+    <img [src]="data2.image" alt="">
+    <div class="body">
+        <h4>{{data2.title}}</h4>
+        <p>{{data2.description}}</p>
+    </div>
+    <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+        <button class="cart" (click)="add()" (click)="increse()">Add To Cart</button>
+        <span>{{data2.price}} L.E</span>
+    </div>
+</div>

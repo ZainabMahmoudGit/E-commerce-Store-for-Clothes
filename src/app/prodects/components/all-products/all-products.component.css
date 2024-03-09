@@ -1,0 +1,149 @@
+.item {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.body {
+    padding-top: 0;
+}
+
+p {
+    margin: 15px 0;
+    height: 100px;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+h4 {
+    height: 75px;
+    overflow: hidden;
+    padding: 5px 15px;
+    font-size: 18px;
+    background-color: #eee;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.items:hover {
+    transform: scale(1.1);
+}
+
+span {
+    background-color: #f1b4b4;
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+
+
+/* -------------------comments------------------ */
+
+.commentContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.CommentHolder {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid rgb(111, 128, 150);
+    border-right: 1px solid rgb(111, 128, 150);
+    border-radius: 10px;
+    background-color: #EEF2F5;
+    padding-top: 20px;
+}
+
+.comment {
+    width: 95%;
+}
+
+.audienceComments {
+    width: 95%;
+    margin-top: 30px;
+}
+
+.commentCard {
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+}
+
+.commentCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.commentCard h5 {
+    color: #356FFD;
+    position: relative;
+}
+
+.commentCard h5 i {
+    color: #28A745;
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+    top: -2px;
+}
+
+.commentCard h5 span {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #23459c;
+}
+
+.commentCard p {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.likeDislike {
+    float: right;
+    position: relative;
+    bottom: 14px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likeDislike i {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.likeDislike i:hover {
+    transform: scale(1.04);
+}
+
+.likeDislike #like {
+    color: #356FFD;
+    margin-left: 5px;
+}
+
+.likeDislike div span {
+    color: #356FFD;
+    font-weight: 600;
+}

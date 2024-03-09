@@ -1,0 +1,49 @@
+img {
+    width: 100px;
+}
+
+.qulbtn {
+    width: 100px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+    display: inline-block;
+}
+
+.inddebtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(183, 132, 231);
+    color: white;
+    border: 2px;
+    border-style: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.delbtn {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(183, 132, 231);
+    color: white;
+    border: 2px;
+    border-style: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.total {
+    width: 130px;
+    border: 1px solid rgb(121, 46, 192);
+    color: black;
+    border-radius: 20px;
+    float: right;
+    margin-right: 200px;
+}
+
+.total p {
+    text-align: center;
+    margin-right: 10px;
+}
