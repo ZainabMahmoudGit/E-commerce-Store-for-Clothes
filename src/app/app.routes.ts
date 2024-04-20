@@ -6,15 +6,20 @@ import { ProdectDetailsComponent } from './prodects/components/prodect-details/p
 import { AllProductsComponent } from './prodects/components/all-products/all-products.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SingleprodectDetailsComponent } from './singleprodect-details/singleprodect-details.component';
+import { HeadertwoComponent } from './headertwo/headertwo.component';
 
 export const routes: Routes = [
     { path:"header", component:HeaderComponent},
+    { path:"headertwo", component:HeadertwoComponent},
+
     { path:"carts", component:CartComponent},
     { path:"login", component:LoginComponent},
-    { path:"", component:SignUpComponent},
+    { path:"SignUp", component:SignUpComponent},
     { path:"prodects", component:AllProductsComponent},
-    { path:"details", component:AllProductsComponent},
-    { path:"**", component:HeaderComponent},
-
+    //{ path:"details", component:AllProductsComponent},
+    { path:"SingleprodectDetailsComponent/:productid", component:SingleprodectDetailsComponent},
+    { path:"**", component:SignUpComponent},
+  
 
 ];

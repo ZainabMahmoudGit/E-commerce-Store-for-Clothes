@@ -1,29 +1,81 @@
-<form #prodectForm="ngForm" (ngSubmit)="handelForm(prodectForm)">
+<app-header></app-header>
+<div class="container">
 
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" name="email" ngModel required="" minlength="3" #email="ngModel" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> @if (email.invalid&& email.touched) {@if (email.errors?.['required'])
-        {
-        <span class="form-text text-danger">this filed is required</span> }@if (email.errors?.['minlength']) {
-        <span class="form-text text-danger">minlength 10</span> } }
+    <!-- النموذج هنا -->
+    <div class="form-container">
+
+        <form #prodectForm="ngForm" (ngSubmit)="handelForm(prodectForm)">
+
+            <h1 style="text-align: center;margin-bottom:10px;">Create Account</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" ngModel required="" minlength="3" #email="ngModel" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> @if (email.invalid&& email.touched) {@if (email.errors?.['required'])
+                {
+                <span class="form-text text-danger">this filed is required</span> }@if (email.errors?.['minlength']) {
+                <span class="form-text text-danger">minlength 10</span> } }
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel required="" minlength="8" #password="ngModel"> @if (password.invalid&& password.touched) {@if (password.errors?.['required']) {
+                <span class="form-text text-danger">this filed is required</span> }@if (password.errors?.['minlength']) {
+                <span class="form-text text-danger">minlength 8</span> } }
+            </div>
+            <a class="btnlogin d-inline-block active-class2 " routerLink="/prodects">log in</a>
+
+            <br>
+            <h2 class="d-inline-block">Don’t have account ? </h2>
+            <a class=" d-inline-block active-class2 " routerLink="/">Register</a>
+
+
+
+        </form>
     </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel required="" minlength="8" #password="ngModel"> @if (password.invalid&& password.touched) {@if (password.errors?.['required']) {
-        <span class="form-text text-danger">this filed is required</span> }@if (password.errors?.['minlength']) {
-        <span class="form-text text-danger">minlength 8</span> } }
+    <div class="image-container">
+        <img src="/assets/1626498811833.jpg" alt="صورة">
     </div>
-    <a class=" d-inline-block active-class2 " routerLink="prodects">log in</a>
-
-    <br>
-    <h2 class="d-inline-block">Don’t have account ? </h2>
-    <a class=" d-inline-block active-class2 " routerLink="/">Register</a>
-
-    <!-- <a class="btn active-classbtn " routerLink="/">Sign Up</a>
-    <br>
-    <p class="d-inline-block">Don’t have account ? </p>
-
-    <a class=" d-inline-block active-class2 " routerLink="/add-prodect">Register</a> -->
+</div>
 
 
-</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <img class="signimg" src="/assets/1626498811833.jpg">
+<div class="signcontainer">
+    <h1 style="text-align: center;margin-bottom:10px;">Create Account</h1>
+
+    <form #prodectForm="ngForm" (ngSubmit)="handelForm(prodectForm)">
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" ngModel required="" minlength="3" #email="ngModel" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> @if (email.invalid&& email.touched) {@if (email.errors?.['required'])
+            {
+            <span class="form-text text-danger">this filed is required</span> }@if (email.errors?.['minlength']) {
+            <span class="form-text text-danger">minlength 10</span> } }
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel required="" minlength="8" #password="ngModel"> @if (password.invalid&& password.touched) {@if (password.errors?.['required']) {
+            <span class="form-text text-danger">this filed is required</span> }@if (password.errors?.['minlength']) {
+            <span class="form-text text-danger">minlength 8</span> } }
+        </div>
+        <a class=" d-inline-block active-class2 " routerLink="prodects">log in</a>
+
+        <br>
+        <h2 class="d-inline-block">Don’t have account ? </h2>
+        <a class=" d-inline-block active-class2 " routerLink="/">Register</a>
+
+
+
+    </form>
+
+</div> -->

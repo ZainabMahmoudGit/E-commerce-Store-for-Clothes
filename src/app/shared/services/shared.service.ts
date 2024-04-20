@@ -1,16 +1,24 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
-  constructor(private http: HttpClient) { }
-  getAllprodect(){
-   return this.http.get(`https://fakestoreapi.com/products`);
-  }
+  //constructor(private http: HttpClient) { }
   
+  constructor(private httpClient: HttpClient) {}
+  getAllprodect(){
+   return this.httpClient.get(`https://fakestoreapi.com/products`);
+  }
+  getSingleProduct(productid: any) {
+    return this.httpClient.get('https://fakestoreapi.com/products/' + productid);
+  }
+ 
+  //https://fakestoreapi.com/products/1
  
     private items :any[]=JSON.parse(localStorage.getItem('cartitem')||'[]');
       Addtocart(prodect:any)

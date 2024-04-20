@@ -4,6 +4,7 @@ nav {
     margin-bottom: 50px;
     width: 1535px;
     margin-left: -120px;
+    height: 70px;
 }
 
 .imglogo {
@@ -21,9 +22,8 @@ nav {
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 20%;
-    margin: 0;
+    justify-content: end;
+    margin-top: -4%;
 }
 
 li {
@@ -36,4 +36,8 @@ li {
 #cartCount {
     margin-top: -10px;
     position: absolute;
+}
+
+li {
+    margin-right: 10px;
 }

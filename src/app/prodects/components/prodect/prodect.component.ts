@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SharedService } from '../../../shared/services/shared.service';
 
+import { Router, provideRouter, RouterLink } from '@angular/router';
 @Component({
   selector: 'app-prodect',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './prodect.component.html',
   styleUrl: './prodect.component.css'
 })
@@ -17,7 +18,7 @@ this.item.emit(this.data2)
   }
 
   counter :number=0;
-  constructor(private counterservice :SharedService){}
+  constructor(private counterservice :SharedService ,private router:Router){}
     ngOnInit(){
 
       this.counterservice.getcount().subscribe((value)=>this.counter=value);
@@ -29,5 +30,9 @@ this.item.emit(this.data2)
     }
     increse(){
       this.counterservice.Updatacount(this.counter +1)
+    }
+    handNavigetor(id:string ){
+      this.router.navigate(['/prodect-details',id])
+  
     }
 }

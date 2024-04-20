@@ -1,18 +1,8 @@
-<h1 class="mb-5 mt-3">cart</h1>
-<!-- @for (item of sharedService.getitem(); track item.id) {
-<div class="cart-item">
-    <img [src]="item.image" alt="">
-    <h2>{{item.name}}</h2>
-    <h2>{{item.price}}</h2>
-    <p>quantity:{{item.quantity}}</p>
-    <button (click)="deletefromcart(item)">delete</button>
-    <button (click)="sharedService.incrementQuantity(item.id)">+</button>
-    <button (click)="sharedService.decrementQuantity(item.id)">-</button>
-</div>
-}
-<p>Total: {{sharedService.gettotal()}}</p>
+<app-headertwo>
+</app-headertwo>
 
-<h1>//////////////////////////////////////</h1> -->
+<h1 class="mb-5 mt-3">cart</h1>
+
 <div class="row w-100">
     <h3 class="col-4">Description</h3>
     <h3 class="col-3">quantity</h3>
@@ -27,8 +17,7 @@
             <h2>{{item.name}}</h2>
         </div>
         <div class="col-3">
-            <button class=" inddebtn" (click)="sharedService.incrementQuantity(item.id)" (click)="increse()">+</button>
-            <p class=" qulbtn">quantity:{{counter}}</p>
+            <button style="margin-right: 20px;" class=" inddebtn" (click)="sharedService.incrementQuantity(item.id)" (click)="increse()">+</button>
 
             <button class=" inddebtn" (click)="sharedService.decrementQuantity(item.id)" (click)="decrese()">-</button>
         </div>

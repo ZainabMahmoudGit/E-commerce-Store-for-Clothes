@@ -4,11 +4,12 @@ import { ProdectsService } from '../../services/prodects.service';
 import { SelectedComponent } from '../../../shared/selcted/selected.component';
 import { ProdectComponent } from '../prodect/prodect.component';
 import { SharedService } from '../../../shared/services/shared.service';
+import { HeadertwoComponent } from '../../../headertwo/headertwo.component';
 
 @Component({
   selector: 'app-all-products',
   standalone: true,
-  imports: [CommonModule,ProdectComponent],
+  imports: [CommonModule,ProdectComponent,HeadertwoComponent],
   templateUrl: './all-products.component.html',
   styleUrl: './all-products.component.css'
 })

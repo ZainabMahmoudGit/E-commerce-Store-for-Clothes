@@ -1,5 +1,6 @@
 <div class="items">
-    <img [src]="data2.image" alt="">
+    <a routerLink="/SingleprodectDetailsComponent/{{data2.id}}"> <img [src]="data2.image" alt=""> </a>
+
     <div class="body">
         <h4>{{data2.title}}</h4>
         <p>{{data2.description}}</p>
@@ -9,3 +10,6 @@
         <span>{{data2.price}} L.E</span>
     </div>
 </div>
+
+<!--  <button class="btn btn-danger" (click)="handNavigetor(prodectsItem.id)">Show Details</button>
+-->

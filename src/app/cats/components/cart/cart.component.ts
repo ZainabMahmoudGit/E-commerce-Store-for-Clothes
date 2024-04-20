@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { SharedService } from '../../../shared/services/shared.service';
+import { HeadertwoComponent } from '../../../headertwo/headertwo.component';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [],
+  imports: [HeadertwoComponent],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
